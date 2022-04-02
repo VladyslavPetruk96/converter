@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body class="bg-dark">
+    <div class="container bg-light p-3">
+        <input type="date" name="date" id="date">
+        <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>Абревіатура</th>
+                <th>Назва Валюти</th>
+                <th>Офіційний курс</th>
+                <th>Дата Курсу</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <form name="calculate">
+            <label for="number">Конвертер валюти:</label>
+            <input type="number" min="1" id="number" value="1">
+            <select name="countrySelect" id="select"></select>
+            <button type="button" id="button">Convert</button>
+            <p></p>
+        </form>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
